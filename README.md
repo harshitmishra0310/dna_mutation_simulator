@@ -38,25 +38,45 @@ This project demonstrates how a single change in DNA can influence the downstrea
 
 🧠 Biological Workflow
 
+
 Original DNA
+
 │
+
 ▼
+
 Mutation Simulation
+
 │
+
 ▼
+
 Mutated DNA
+
 │
+
 ▼
+
 RNA Transcription
+
 │
+
 ▼
+
 mRNA Sequence
+
 │
+
 ▼
+
 Protein Translation
+
 │
+
 ▼
+
 Protein Comparison
+
 
 ⸻
 
@@ -83,6 +103,7 @@ Enter base: T
 Output
 
 =======================================================
+
 DNA MUTATION SIMULATOR
 
 ✓ DNA sequence is valid.
