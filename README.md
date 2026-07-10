@@ -96,8 +96,11 @@ Insertion and deletion mutations can cause frameshift mutations, altering the co
 Input
 
 Enter a DNA sequence: ATGGCCATTGTAATGGGCCGCTGA
+
 Choose mutation type: Substitution
+
 Enter position to mutate: 5
+
 Enter base: T
 
 Output
