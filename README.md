@@ -10,9 +10,15 @@ This project demonstrates how a single change in DNA can influence the downstrea
 
 ➖ Deletion Mutation
 
+![img alt](https://github.com/harshitmishra0310/dna_mutation_simulator/blob/91cc7120cdfffdd2735990d9bc4bfa5552e71da7/Deletion.png)
+
 ➕ Insertion Mutation
 
+![img alt](https://github.com/harshitmishra0310/dna_mutation_simulator/blob/91cc7120cdfffdd2735990d9bc4bfa5552e71da7/Insertion.png)
+
 🔬 Substitution Mutation
+
+![img alt](https://github.com/harshitmishra0310/dna_mutation_simulator/blob/91cc7120cdfffdd2735990d9bc4bfa5552e71da7/Subsitution.png)
 
 ⸻
 
