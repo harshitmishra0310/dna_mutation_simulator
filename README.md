@@ -6,6 +6,16 @@ This project demonstrates how a single change in DNA can influence the downstrea
 
 ⸻
 
+📸 Screenshots
+
+➖ Deletion Mutation
+
+➕ Insertion Mutation
+
+🔬 Substitution Mutation
+
+⸻
+
 ✨ Features
 
 * 🔬 Validates user-provided DNA sequences
@@ -23,23 +33,23 @@ This project demonstrates how a single change in DNA can influence the downstrea
 🧠 Biological Workflow
 
 Original DNA
-      │
-      ▼
+│
+▼
 Mutation Simulation
-      │
-      ▼
+│
+▼
 Mutated DNA
-      │
-      ▼
+│
+▼
 RNA Transcription
-      │
-      ▼
+│
+▼
 mRNA Sequence
-      │
-      ▼
+│
+▼
 Protein Translation
-      │
-      ▼
+│
+▼
 Protein Comparison
 
 ⸻
@@ -67,27 +77,27 @@ Enter base: T
 Output
 
 =======================================================
-              DNA MUTATION SIMULATOR
-=======================================================
+DNA MUTATION SIMULATOR
+
 ✓ DNA sequence is valid.
--------------------------------------------------------
+
 GENE SEQUENCE
--------------------------------------------------------
+
 Original gene : ATGGCCATTGTAATGGGCCGCTGA
 Mutated Gene  : ATGGTCATTGTAATGGGCCGCTGA
--------------------------------------------------------
+
 RNA SEQUENCE
--------------------------------------------------------
+
 Original RNA : AUGGCCAUUGUAAUGGGCCGCUGA
 Mutated RNA  : AUGGUCAUUGUAAUGGGCCGCUGA
--------------------------------------------------------
+
 PROTEIN TRANSLATION
--------------------------------------------------------
+
 Original protein : MAIVMGR
 Mutated protein  : MVIVMGR
--------------------------------------------------------
+
 RESULT
--------------------------------------------------------
+
 Protein sequence has changed due to mutation
 
 ⸻
