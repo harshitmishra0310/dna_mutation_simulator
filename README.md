@@ -117,7 +117,7 @@ Protein sequence has changed due to mutation
 
 1. Clone the repository:
 
-git clone https://github.com/your-username/dna-mutation-simulator.git
+git clone https://github.com/your-username/dna_mutation_simulator.git
 
 2. Navigate to the project folder:
 
