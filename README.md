@@ -1,4 +1,4 @@
-#🧬 DNA Mutation Simulator
+🧬 DNA Mutation Simulator
 
 A Python based bioinformatics tool that simulates substitution, insertion, and deletion mutations in a DNA sequence, then analyzes their impact on RNA transcription, protein translation, and the resulting amino acid sequence.
 
