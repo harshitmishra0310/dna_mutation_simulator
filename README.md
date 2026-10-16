@@ -1,215 +1,52 @@
-🧬 DNA Mutation Simulator
+# DNA Mutation Simulator
 
-A Python based bioinformatics tool that simulates substitution, insertion, and deletion mutations in a DNA sequence, then analyzes their impact on RNA transcription, protein translation, and the resulting amino acid sequence.
+A Python command-line tool for exploring how a chosen DNA edit changes a translated sequence. Select substitution, insertion or deletion, then compare the original and edited DNA, RNA and protein output.
 
-This project demonstrates how a single change in DNA can influence the downstream biological processes described by the Central Dogma of Molecular Biology.
+## Quick start
 
-⸻
+Requires Python 3 and Git for the clone command. No third-party Python packages are required.
 
-📸 Screenshots
+    git clone https://github.com/harshitmishra0310/dna_mutation_simulator.git
+    cd dna_mutation_simulator
+    python3 dna_mutation_simulator.py
 
-➖ Deletion Mutation
+## Example: substitution
 
-![img alt](https://github.com/harshitmishra0310/dna_mutation_simulator/blob/91cc7120cdfffdd2735990d9bc4bfa5552e71da7/Deletion.png)
+Enter these responses in order:
 
-➕ Insertion Mutation
+    DNA: ATGGCCATTGTAATGGGCCGCTGA
+    Choice: 1
+    Position: 5
+    Base: T
 
-![img alt](https://github.com/harshitmishra0310/dna_mutation_simulator/blob/91cc7120cdfffdd2735990d9bc4bfa5552e71da7/Insertion.png)
+Key output:
 
-🔬 Substitution Mutation
+    Original DNA: ATGGCCATTGTAATGGGCCGCTGA
+    Mutated DNA:  ATGGTCATTGTAATGGGCCGCTGA
+    Original protein: MAIVMGR
+    Mutated protein:  MVIVMGR
 
-![img alt](https://github.com/harshitmishra0310/dna_mutation_simulator/blob/91cc7120cdfffdd2735990d9bc4bfa5552e71da7/Subsitution.png)
+The second codon changes from GCC to GTC, changing alanine to valine in this translated sequence.
 
-⸻
+## Position conventions
 
-✨ Features
+Positions start at 1. Substitution and deletion accept positions 1 through the sequence length. Insertion places the entered base before the selected position; length + 1 appends it.
 
-* 🔬 Validates user-provided DNA sequences
-* 🧬 Simulates substitution mutations
-* ➕ Simulates insertion mutations
-* ➖ Simulates deletion mutations
-* 🧪 Generates the mutated DNA sequence
-* 🧫 Transcribes both original and mutated DNA into RNA sequences
-* 🧬 Translates RNA into protein sequences using the standard genetic code
-* ⚖️ Compares original and mutated proteins to determine whether the mutation changed the resulting protein
-* 📊 Displays results in a clear, sectioned console format
+## Biological assumptions and limits
 
-⸻
+- Input is treated as coding-strand DNA. Translation starts at nucleotide 1, uses the standard genetic code, stops at the first stop codon and ignores trailing incomplete codons.
+- The current result compares protein strings for equality. It does not automatically classify synonymous, missense, nonsense or frameshift consequences.
+- A changed amino acid sequence does not establish a change in protein structure, function or clinical significance.
+- Each substitution or insertion accepts exactly one A, T, G or C; invalid positions and bases receive a clear error message.
 
-🧠 Biological Workflow
+## Program preview
 
+![Substitution output](Subsitution.png)
 
-Original DNA
+## Author
 
-│
+Harshit Mishra — B.Tech Bioinformatics student at Shoolini University.
 
-▼
+## License
 
-Mutation Simulation
-
-│
-
-▼
-
-Mutated DNA
-
-│
-
-▼
-
-RNA Transcription
-
-│
-
-▼
-
-mRNA Sequence
-
-│
-
-▼
-
-Protein Translation
-
-│
-
-▼
-
-Protein Comparison
-
-
-⸻
-
-🧪 Mutation Types Supported
-
-Mutation Type	Description	Example
-Substitution	Replaces one nucleotide with another	A → G
-Insertion	Adds a new nucleotide at a specified position	+A
-Deletion	Removes a nucleotide from a specified position	-T
-
-Insertion and deletion mutations can cause frameshift mutations, altering the codon reading frame and potentially changing the entire downstream protein sequence.
-
-⸻
-
-🧬 Example Run
-
-Input
-
-Enter a DNA sequence: ATGGCCATTGTAATGGGCCGCTGA
-
-Choose mutation type: Substitution
-
-Enter position to mutate: 5
-
-Enter base: T
-
-Output
-
-=====================================
-
-DNA MUTATION SIMULATOR
-
-✓ DNA sequence is valid.
-
-GENE SEQUENCE
-
-Original gene : ATGGCCATTGTAATGGGCCGCTGA
-
-Mutated Gene  : ATGGTCATTGTAATGGGCCGCTGA
-
-RNA SEQUENCE
-
-Original RNA : AUGGCCAUUGUAAUGGGCCGCUGA
-
-Mutated RNA  : AUGGUCAUUGUAAUGGGCCGCUGA
-
-PROTEIN TRANSLATION
-
-Original protein : MAIVMGR
-
-Mutated protein  : MVIVMGR
-
-RESULT
-
-Protein sequence has changed due to mutation
-
-⸻
-
-🧬 Understanding the Results
-
-* Original gene shows the DNA sequence before mutation.
-* Mutated gene shows the DNA sequence after the selected mutation.
-* Original RNA and Mutated RNA show transcription results after replacing thymine (T) with uracil (U).
-* Original protein and Mutated protein show translation results using the standard codon table.
-* The Result section indicates whether the mutation changed the resulting protein sequence.
-
-⸻
-
-⚙️ Technologies Used
-
-* 🐍 Python 3
-* 🧬 Bioinformatics concepts
-* 🔁 String manipulation
-* 🔄 Loops and conditional statements
-* 📚 Dictionaries for codon-to-amino-acid mapping
-* 🧪 Molecular biology principles: DNA, RNA, codons, and protein translation
-
-⸻
-
-🚀 How to Run
-
-1. Clone the repository:
-
-git clone https://github.com/your-username/dna_mutation_simulator.git
-
-2. Navigate to the project folder:
-
-cd dna-mutation-simulator
-
-3. Run the program:
-
-python dna_mutation_simulator.py
-
-4. Enter a DNA sequence and choose a mutation type when prompted.
-
-⸻
-
-📚 Scientific Concepts Demonstrated
-
-* DNA sequence validation
-* Point mutations
-* Frameshift mutations
-* RNA transcription
-* Protein translation
-* Codon amino acid mapping
-* Mutation impact on protein structure
-
-⸻
-
-🎯 Learning Outcomes
-
-This project helped strengthen my understanding of:
-
-* Python programming and problem solving
-* Biological sequence analysis
-* The relationship between DNA, RNA, and proteins
-* How genetic mutations can alter protein synthesis
-* Computational approaches used in introductory bioinformatics
-
-⸻
-
-👨‍💻 Author
-
-Harshit Mishra
-
-Aspiring Bioinformatics student interested in computational biology, genomics, machine learning, and biomedical data analysis.
-
-⸻
-
-📜 License
-
-This project is licensed under the MIT License.
-
-⸻
-
-⭐ If you find this project interesting, consider giving the repository a star and following my bioinformatics learning journey!
+MIT License. See the license file in this repository.
