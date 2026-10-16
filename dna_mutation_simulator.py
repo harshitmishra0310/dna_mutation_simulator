@@ -68,7 +68,11 @@ if choice not in ["1", "2", "3"]:
     exit()
  
 if choice == '1':
-    position = int(input('\nEnter position to mutate: ')) - 1
+    try:
+        position = int(input('\nEnter position to mutate: ')) - 1
+    except ValueError:
+        print("\n✗ Position must be an integer.")
+        raise SystemExit(1)
  
     if position < 0 or position >= len(dna):
         print('\n✗ The position is not valid')
@@ -76,7 +80,7 @@ if choice == '1':
  
     new_base = input('Enter base: ').upper().strip()
  
-    if new_base not in 'ATGC':
+    if len(new_base) != 1 or new_base not in 'ATGC':
         print('\n✗ The base you entered is not in ATGC and is invalid')
         exit()
  
@@ -133,7 +137,11 @@ if choice == '1':
  
  
 elif choice == '2':
-    position1 = int(input('\nEnter position to mutate: ')) - 1
+    try:
+        position1 = int(input('\nEnter position to mutate: ')) - 1
+    except ValueError:
+        print("\n✗ Position must be an integer.")
+        raise SystemExit(1)
  
     if position1 < 0 or position1 > len(dna):
         print('\n✗ The position is not valid')
@@ -141,7 +149,7 @@ elif choice == '2':
  
     new_base1 = input('Enter base: ').upper().strip()
  
-    if new_base1 not in 'ATGC':
+    if len(new_base1) != 1 or new_base1 not in 'ATGC':
         print('\n✗ The base you entered is not in ATGC and is invalid')
         exit()
  
@@ -198,7 +206,11 @@ elif choice == '2':
  
  
 elif choice == '3':
-    position2 = int(input('\nEnter the position you want to remove the gene from: ')) - 1
+    try:
+        position2 = int(input('\nEnter the position you want to remove the gene from: ')) - 1
+    except ValueError:
+        print("\n✗ Position must be an integer.")
+        raise SystemExit(1)
  
     if position2 < 0 or position2 >= len(dna):
         print('\n✗ The position is not valid')
